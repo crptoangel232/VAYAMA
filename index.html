@@ -3,62 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VAYAMA — Transport Business Platform</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>VAYAMA — Transport Operations</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Inter',sans-serif;background:#0a0a1a;color:#e0e0e0;line-height:1.6;}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;border-bottom:1px solid rgba(255,255,255,0.1);}
-.nav-logo{font-size:20px;font-weight:800;color:#6dd5ed;}
-.nav-links a{color:#bdc3c7;text-decoration:none;font-size:14px;margin-left:20px;}
-.hero{padding:80px 40px;text-align:center;max-width:800px;margin:0 auto;}
-.hero h1{font-size:42px;font-weight:900;background:linear-gradient(135deg,#6dd5ed,#2193b0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px;}
-.hero p{font-size:17px;color:#95a5a6;margin-bottom:30px;max-width:600px;margin-left:auto;margin-right:auto;}
-.badge{display:inline-block;background:rgba(109,213,237,0.15);color:#6dd5ed;padding:6px 16px;border-radius:100px;font-size:13px;font-weight:600;margin-bottom:20px;}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:900px;margin:0 auto;padding:0 40px 60px;}
-.feature-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:30px;transition:transform 0.2s,border-color 0.3s;}
-.feature-card:hover{transform:translateY(-3px);border-color:#6dd5ed;}
-.feature-icon{font-size:32px;margin-bottom:12px;}
-.feature-card h3{color:#e0e0e0;font-size:18px;margin-bottom:8px;}
-.feature-card p{color:#95a5a6;font-size:14px;}
-.cta{padding:14px 32px;background:linear-gradient(135deg,#6dd5ed,#2193b0);color:#0a0a1a;border:none;border-radius:10px;font-size:15px;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block;}
-.cta:hover{transform:translateY(-2px);box-shadow:0 5px 20px rgba(109,213,237,0.3);}
-.tech{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:600px;margin:0 auto 40px;padding:0 40px;}
-.tech span{padding:6px 14px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;font-size:13px;color:#6dd5ed;}
-.footer{text-align:center;padding:30px;color:#555;font-size:13px;border-top:1px solid rgba(255,255,255,0.05);}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:#f5f2ed;color:#2a2622;line-height:1.65;}
+.wrap{max-width:680px;margin:0 auto;padding:60px 24px;}
+header{margin-bottom:48px;padding-bottom:24px;border-bottom:1px solid #d9d4cb;}
+header .label{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#a85c3e;font-weight:600;margin-bottom:12px;}
+header h1{font-family:Georgia,"Times New Roman",serif;font-size:34px;font-weight:400;letter-spacing:-0.5px;margin-bottom:12px;}
+header p{font-size:16px;color:#6b6358;max-width:520px;}
+nav{display:flex;gap:24px;margin-top:20px;font-size:14px;}
+nav a{color:#a85c3e;text-decoration:none;border-bottom:1px solid transparent;}
+nav a:hover{border-bottom-color:#a85c3e;}
+.section{margin-bottom:48px;}
+.section h2{font-family:Georgia,serif;font-size:20px;font-weight:400;margin-bottom:16px;color:#2a2622;}
+.feature{display:flex;gap:16px;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #e8e3da;}
+.feature:last-child{border-bottom:none;}
+.feature .num{font-family:Georgia,serif;font-size:16px;color:#a85c3e;min-width:24px;font-weight:400;}
+.feature h3{font-size:15px;font-weight:600;margin-bottom:4px;}
+.feature p{font-size:14px;color:#6b6358;}
+.stack{display:flex;flex-wrap:wrap;gap:8px;}
+.stack span{font-size:13px;color:#6b6358;padding:4px 12px;border:1px solid #d9d4cb;border-radius:2px;}
+footer{padding-top:24px;border-top:1px solid #d9d4cb;font-size:13px;color:#9a9288;display:flex;justify-content:space-between;}
+footer a{color:#6b6358;text-decoration:none;}
+footer a:hover{text-decoration:underline;}
+@media(max-width:600px){.wrap{padding:40px 20px;}header h1{font-size:26px;}footer{flex-direction:column;gap:8px;}}
 </style>
 </head>
 <body>
-<nav class="nav">
-<div class="nav-logo">VAYAMA</div>
-<div class="nav-links">
-<a href="#features">Features</a>
-<a href="https://github.com/crptoangel232/VAYAMA" target="_blank">GitHub</a>
-<a href="https://crptoangel232.github.io/My-Portfolio-Website/" target="_blank">Portfolio</a>
-</div>
+<div class="wrap">
+<header>
+<div class="label">Project 01 — Transport</div>
+<h1>VAYAMA</h1>
+<p>A transport operations platform for managing fleets, schedules, and driver networks. Built for operators who need clarity, not clutter.</p>
+<nav>
+<a href="https://github.com/crptoangel232/VAYAMA" target="_blank">Source</a>
+<a href="https://crptoangel232.github.io/My-Portfolio-Website/">Portfolio</a>
 </nav>
+</header>
 
-<section class="hero">
-<div class="badge">Transport Tech</div>
-<h1>VAYAMA — Transport Business Platform</h1>
-<p>An AI-powered transport management app for scheduling, fleet operations, and driver network management. Built with TypeScript and Tailwind CSS.</p>
-<a href="https://github.com/crptoangel232/VAYAMA" target="_blank" class="cta">View Source Code</a>
+<section class="section">
+<h2>What it does</h2>
+<div class="feature">
+<div class="num">01</div>
+<div><h3>Fleet Management</h3><p>Track vehicles, routes, and availability in real time.</p></div>
+</div>
+<div class="feature">
+<div class="num">02</div>
+<div><h3>Scheduling</h3><p>Plan trips and assign drivers without spreadsheets.</p></div>
+</div>
+<div class="feature">
+<div class="num">03</div>
+<div><h3>Driver Network</h3><p>Manage profiles, assignments, and performance in one place.</p></div>
+</div>
+<div class="feature">
+<div class="num">04</div>
+<div><h3>AI Booking</h3><p>Match passengers to available routes automatically.</p></div>
+</div>
+<div class="feature">
+<div class="num">05</div>
+<div><h3>Analytics</h3><p>Revenue, utilization, and trip data without dashboards nobody reads.</p></div>
+</div>
 </section>
 
-<div class="tech">
-<span>TypeScript</span><span>React</span><span>Tailwind CSS</span><span>AI Integration</span>
-</div>
+<section class="section">
+<h2>Built with</h2>
+<div class="stack"><span>TypeScript</span><span>React</span><span>Tailwind CSS</span></div>
+</section>
 
-<div class="features" id="features">
-<div class="feature-card"><div class="feature-icon">🚌</div><h3>Fleet Management</h3><p>Track and manage vehicle schedules, routes, and availability in real time.</p></div>
-<div class="feature-card"><div class="feature-icon">📅</div><h3>Smart Scheduling</h3><p>AI-assisted trip scheduling and route optimization for transport operators.</p></div>
-<div class="feature-card"><div class="feature-icon">👥</div><h3>Driver Network</h3><p>Manage driver profiles, assignments, and performance from one dashboard.</p></div>
-<div class="feature-card"><div class="feature-icon">📊</div><h3>Analytics</h3><p>Business insights on trips, revenue, and fleet utilization.</p></div>
-<div class="feature-card"><div class="feature-icon">🤖</div><h3>AI Booking</h3><p>Intelligent booking system that matches passengers to available routes.</p></div>
-<div class="feature-card"><div class="feature-icon">💬</div><h3>Social Module</h3><p>Community features and driver network management via VAYAMA Social.</p></div>
+<footer>
+<span>Albert Taylor — Sierra Leone</span>
+<a href="https://github.com/crptoangel232" target="_blank">github.com/crptoangel232</a>
+</footer>
 </div>
-
-<div class="footer">VAYAMA — by Albert Taylor | Sierra Leone</div>
 </body>
 </html>
